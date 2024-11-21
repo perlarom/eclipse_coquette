@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    padding: 20px;
+    text-align: center;
+}
+
+.highlights {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.highlight {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 10px;
+    flex: 1 1 200px; /* Adaptable a diferentes tamaños */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.highlight img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; /* Cambiar a bloque en pantallas pequeñas */
+        margin: 5px 0;
+    }
+    
+    .highlight {
+        flex: 1 1 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em; /* Tamaño de fuente más pequeño en pantallas muy pequeñas */
+    }
+    
+    .hero h2 {
+        font-size: 1.5em; /* Tamaño de fuente más pequeño */
+    }
+    
+    .hero p {
+        font-size: 0.9em; /* Ajustar tamaño de fuente */
+    }
+}
+
+/* Estilos para el botón "Compra Ahora" */
+.btn-comprar {
+    background-color: #fea1c0; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 12px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de la fuente */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+.btn-comprar:hover {
+    background-color: #333; /* Color negro opaco al pasar el mouse */
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+}
+

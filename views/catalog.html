@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Eclipse Coquette</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<style>
+    .catalog-container {
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 20px auto; /* Centramos el contenedor */
+    padding: 20px; /* Espaciado interno */
+}
+
+.catalog-container h2 {
+    text-align: center; /* Centramos el título */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.product {
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    margin: 10px; /* Espacio entre tarjetas */
+    padding: 15px; /* Espaciado interno */
+    text-align: center; /* Centramos el texto */
+    transition: transform 0.2s; /* Transición suave para el efecto hover */
+    display: inline-block; /* Alineación horizontal */
+    width: calc(25% - 20px); /* Tres productos por fila */
+    vertical-align: top; /* Alineamos el contenido */
+}
+
+.product img {
+    max-width: 80%; /* Imagen responsive */
+    height: auto; /* Mantener proporciones */
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+}
+
+.product h3 {
+    color: #333; /* Color del título */
+}
+
+.product p {
+    color: #666; /* Color del texto */
+}
+
+.product:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+}
+
+@media (max-width: 768px) {
+    .product {
+        width: calc(50% - 20px); /* Dos productos por fila en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .product {
+        width: calc(100% - 20px); /* Un producto por fila en pantallas muy pequeñas */
+    }
+}
+
+</style>
+<body>
+    <header>
+        <h1>Catálogo de Eclipse Coquette</h1>
+        <nav>
+            <ul>
+                <li><a href="perfil.php">Perfil</a></li>
+                <li><a href="catalog.html">Catálogo</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="catalog-container">
+        <h2>Catálogo de Productos</h2>
+        <div class="product">
+            <h3>Producto 1</h3>
+            <img src="../assets/images/022849d4-ca11-4b07-87e2-0d7c834b6ab4.jpeg" alt="Producto 1">
+            <p>Descripción del producto 1.</p>
+            <p>Precio: $XX.XX</p>
+        </div>
+        <div class="product">
+            <h3>Producto 2</h3>
+            <img src="../assets/images/0ca09b6a-bde9-43e9-90f0-388e162b823f.jpeg" alt="Producto 2">
+            <p>Descripción del producto 2.</p>
+            <p>Precio: $XX.XX</p>
+        </div>
+        <div class="product">
+            <h3>Producto 3</h3>
+            <img src="../assets/images/788321e9-d7c7-4b81-9cde-f84e9b2ec050.jpeg" alt="Producto 3">
+            <p>Descripción del producto 3.</p>
+            <p>Precio: $XX.XX</p>
+        </div>
+        <div class="product">
+            <h3>Producto 4</h3>
+            <img src="../assets/images/ac164e4f-77bc-45e9-91d7-e7143bae5a89.jpeg" alt="Producto 4">
+            <p>Descripción del producto 4.</p>
+            <p>Precio: $XX.XX</p>
+        </div>
+        <div class="product">
+            <h3>Producto 5</h3>
+            <img src="../assets/images/d19d8df8-aed5-4fb7-bd37-ea86ba6ef2b1.jpeg" alt="Producto 5">
+            <p>Descripción del producto 5.</p>
+            <p>Precio: $XX.XX</p>
+        </div>
+    </div>
+
+</body>
+</html>
